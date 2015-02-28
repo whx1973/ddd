@@ -13,5 +13,13 @@ namespace Ianwork.Repositories
 		/// 获取RepositoryContext上下文的附加Repository的实例
 		/// </summary>
 		IRepositoryContext Context { get; }
+
+		void Add(TAggregateRoot aggregateRoot);
+
+		TAggregateRoot GetByKey(object key);
+
+		void Remove(TAggregateRoot aggregateRoot);
+
+		void Update(TAggregateRoot aggregateRoot);
 	}
 }
