@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ianwork.Repositories
 {
-	public class RepositoryContext
+	public abstract class RepositoryContext:IRepositoryContext
 	{
 	}
 }
